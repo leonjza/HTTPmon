@@ -31,8 +31,7 @@ class Certificate extends Model
      */
     protected $fillable = [
         'name', 'cn', 'subject', 'hash', 'issuer', 'version', 'serial_number', 'valid_from',
-        'valid_to', 'signature_type_sn', 'signature_type_ln', 'signature_type_id', 'purposes',
-        'extentions', 'key_bits', 'public_key', 'ssl_labs_rating',
+        'valid_to', 'purposes', 'extentions', 'key_bits', 'public_key', 'ssl_labs_rating',
     ];
 
     /**

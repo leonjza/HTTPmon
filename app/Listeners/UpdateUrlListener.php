@@ -282,9 +282,6 @@ class UpdateUrlListener
         $ssl->serial_number = $parsed_certificate['serialNumber'];
         $ssl->valid_from = Carbon::createFromTimestamp($parsed_certificate['validFrom_time_t']);
         $ssl->valid_to = Carbon::createFromTimestamp($parsed_certificate['validTo_time_t']);
-        $ssl->signature_type_sn = $parsed_certificate['signatureTypeSN'];
-        $ssl->signature_type_ln = $parsed_certificate['signatureTypeLN'];
-        $ssl->signature_type_id = $parsed_certificate['signatureTypeNID'];
         $ssl->purposes = $parsed_certificate['purposes'];
         $ssl->extentions = $parsed_certificate['extensions'];
         $ssl->key_bits = $public_key_info['bits'];

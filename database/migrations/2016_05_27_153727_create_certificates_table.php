@@ -28,9 +28,6 @@ class CreateCertificatesTable extends Migration
             $table->string('serial_number')->nullable();
             $table->dateTime('valid_from')->nullable();
             $table->dateTime('valid_to')->nullable();
-            $table->string('signature_type_sn')->nullable();
-            $table->string('signature_type_ln')->nullable();
-            $table->integer('signature_type_id')->nullable();
             $table->json('purposes')->nullable();
             $table->json('extentions')->nullable();
             $table->integer('key_bits')->nullable();
