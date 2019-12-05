@@ -8,6 +8,7 @@
         "php": ">=5.5.9",
         "laravel/framework": "5.2.*",
         "guzzlehttp/guzzle": "~6.0",
+        "symfony/http-foundation": "^3",
         "league/uri": "^4.1",
         "league/csv": "^8.0"
     },
